@@ -1,0 +1,50 @@
+  p {
+    color: black;
+    margin-top:0px;
+  }
+  .index-body {
+    background-color: #caeade;
+  }
+  .project-body {
+    background-color: blue;
+  }
+  .emphasize-me {
+     color: red;
+  }
+  .important {
+    font-weight:bold;
+  }
+  .important:hover {
+    background-color:pink;
+  }
+  p.important {
+    width: 75%;
+  }
+  a[href="index.html"] {
+    padding: 1rem;
+  }
+  .index-link:hover {
+    color: red;
+  }
+  a[href="project.html"] {
+    padding: 1rem;
+  }
+  .project-link:hover {
+    color: red;
+  }
+  li {
+    padding: 1rem;
+  }
+  h1 {
+    color: #ff6597;
+    border-style: solid;
+    border-color: red;
+  }
+  img {
+    border-style: solid;
+    border-color: red;
+    height: 250px;
+  }
+  .three-columned-section {
+    column-count: 3;
+  }
