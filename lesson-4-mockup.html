@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Lesson Four: Box Model Activity</title>
+    <style>
+      /* Begin common element style */
+      * {box-sizing: border-box;}
+      p {
+        font-family: sans-serif;
+        font-size: small;
+      }
+      a {
+        font-weight: bold;
+        font-family: sans-serif;
+        font-size: small;
+        text-decoration: none;
+      }
+      h4 {
+        text-transform: uppercase;
+        font-family: sans-serif;
+        color: #000000;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      blockquote {
+        color: #00b8e1;
+        font-family: sans-serif;
+        text-align: left;
+        font-size: 14px;
+        margin: 0rem;
+      }
+      author {
+        color: #00b8e1;
+        font-family: sans-serif;
+        font-style: italic;
+        font-size: 14px;
+      }
+      /* End common element style */
+      
+      /* Begin header style */
+      header {
+        background-color: #00b8e1;
+        color: #FFFFFF;
+        padding: 2rem;
+        padding-left: 4rem;
+      }
+      h1 {
+        text-transform: uppercase;
+        font-family: sans-serif;
+      }
+      h2 {
+        font-style: italic;
+        font-family: sans-serif;
+      }
+      /* End Header style (no common elements)*/
+      h3 {
+        font-weight: bold;
+        font-family: sans-serif;
+        font-size: medium;
+        color: #00b8e1;
+      }
+      /* Begin Nav Bar style */
+      nav.main {
+        background-color: lightgray;
+        padding: 1rem;
+        padding-left: 4rem;
+      }
+      nav.main a:link {
+        color: #000000;
+        font-family: sans-serif;
+      }
+      nav.main a:visited {
+        color: #000000;
+        font-family: sans-serif;
+      }
+      /* End Nav Bar style */
+      
+      section.right img {
+        width: 200px;
+      }
+      
+      section.right {
+        display: block;
+        float: right;
+        position: relative;
+        width: 40%;
+        padding-right: 4rem;
+        padding-left: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+      }
+      
+      section.right a:link {
+        color: #00b8e1;
+        font-family: sans-serif;
+      }
+      
+      section.right a:visited {
+        color: #00b8e1;
+        font-family: sans-serif;
+      }
+      
+      /* group the quote and author of quote together in style*/
+      div.quoteblock {
+        display: block;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+      
+      main {
+        display: block;
+        float: left;
+        position: relative;
+        width: 60%;
+        padding-left: 4rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+      }
+    
+      /* Begin Footer-Specific style */
+      footer {
+        background-color: #303030;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 3rem;
+        clear: both;
+        /*float: bottom;*/
+      }
+      footer img {
+        width: 200px;
+      }
+      footer a:link {
+        color: #FFFFFF;
+      }
+      footer a:visited {
+        color: #FFFFFF;
+      }
+      /* End Footer-Specific style */
+    </style>
+    
+  </head>
+  <body>
+    <header>
+      <h1>
+        Kitties To Go!
+      </h1>
+      <h2>
+        Seattle's premiere drive-thru <br>cat rentals
+      </h2>
+    </header>
+    <nav class="main">
+       <a href="https://www.google.com">About</a> / <a href="https://www.google.com">Rates</a> / <a href="https://www.google.com">Liability Release</a> / <a href="https://www.google.com">Kitty Profiles</a> / <a href="https://www.google.com">Book a Cat</a>
+    </nav>
+    
+    <div>
+      <section class="right">
+        <h4>Cats in the News</h4>
+        <ul>
+          <li>
+            <p>Chew iPad power cord why must they do that, grab pompom in mouth and put in water dish.</p>
+            <br><a href="https://www.google.com">Find out more >></a>
+          </li>
+          <li>
+            <p>Chew iPad power cord why must they do that, grab pompom in mouth and put in water dish.</p>
+            <br><a href="https://www.google.com">Find out more >></a>
+          </li>
+        </ul>
+        <h4>Cat of the Week</h4>
+        <img src="https://github.com/UWFront-End-Cert/starters/blob/master/lesson04-mock3-sidebar-cat.jpg?raw=true" alt="adorable cat plots of killing owner">
+        <figcaption>
+          <p>Stare at imaginary bug love blinks and purr purr purr purr.</p>
+        </figcaption>
+        <a href="https://www.google.com">Book Now >></a>
+      </section>
+    
+      <main>
+        <article>
+          <h3>
+            Cat ipsum dolor sit amet, find something else more interesting, so catty ipsum mesmerizing birds sleep on my human’s head.
+          </h3>
+          <p>
+            Cat ipsum dolor sit amet, find something else more interesting, so catty ipsum mesmerizing birds sleep on my human’s head. Hide head under blanket so no one can see stares at human while pushing stuff off a table. Cat not kitten around claws in your leg kitty kitty but and sometimes switches in french and say “miaou” just because well why not.
+          </p>
+        </article>
+      
+        <div class="quoteblock">
+          <blockquote>
+            Please stop looking at your phone an pet me. Lounge in the doorway eat and then sleep on your face meowwww meowwww
+          </blockquote>
+          <author>- Jeremy</author>
+        </div>
+        
+        <article>
+          <h4>The Kitties to go Story</h4>
+          <p>
+            Fall asleep on the washing machine snuggles up to shoulders or knees and purrs you to sleep. Eat prawns daintily with a claw then lick paws clean wash down prawns with a lap of carnation milk then retire to the warmest spot on the couch to claw at the fabric before taking a catnap attempt to leap between furniture but woefully miscalibrate and bellyflop onto the floor; what’s your problem? i meant to do that now i shall wash myself intently cough and swat at dog.
+          </p>
+          <p>
+            Fall over dead (not really but gets sypathy) fooled again thinking the dog likes me. Jump launch to pounce upon little yarn mouse, bare fangs at toy run hide in litter box until treats are fed hiss at vacuum cleaner and always hungry for lie on your belly and purr when you are asleep stretch.
+          </p>
+        </article>
+      </main>
+    </div>
+    
+    <footer>
+        <img src="https://raw.githubusercontent.com/UWFront-End-Cert/starters/master/lesson04-mock5-cat-logo.png" alt="company logo">
+        <p>
+          Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>esseque invenienihil imaximu scideru ptistiusam consequunt
+        </p>
+        <nav>
+          <a href="https://www.google.com">Footer link 1</a> / <a href="https://www.google.com">Footer link 2</a> / <a href="https://www.google.com">Footer link 3</a> / <a href="https://www.google.com">Footer link 4</a>
+        </nav>
+        <p>
+          © 2018 Kitties To Go!, LLC | Seattle, WA
+        </p>
+    </footer>
+
+  </body>
+    
+
