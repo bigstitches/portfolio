@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Lesson Four: Box Model Activity</title>
+    <style>
+      /* Begin common element style */
+      * {box-sizing: border-box;}
+      p {
+        font-family: sans-serif;
+        font-size: small;
+      }
+      a {
+        font-weight: bold;
+        font-family: sans-serif;
+        font-size: small;
+        text-decoration: none;
+      }
+      h4 {
+        text-transform: uppercase;
+        font-family: sans-serif;
+        color: #000000;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      blockquote {
+        color: #00b8e1;
+        font-family: sans-serif;
+        text-align: left;
+        font-size: 14px;
+        margin: 0rem;
+      }
+      author {
+        color: #00b8e1;
+        font-family: sans-serif;
+        font-style: italic;
+        font-size: 14px;
+      }
+      /* End common element style */
+      
+      /* Begin header style */
+      header {
+        background-color: #00b8e1;
+        color: #FFFFFF;
+        padding: 2rem;
+        padding-left: 4rem;
+      }
+      h1 {
+        text-transform: uppercase;
+        font-family: sans-serif;
+      }
+      h2 {
+        font-style: italic;
+        font-family: sans-serif;
+      }
+      /* End Header style (no common elements)*/
+      h3 {
+        font-weight: bold;
+        font-family: sans-serif;
+        font-size: medium;
+        color: #00b8e1;
+      }
+      h3.calendar {
+        font-weight: bold;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        font-size: 30px;
+        color: #00b8e1;
+      }
+      /* Begin Nav Bar style */
+      nav.main {
+        background-color: lightgray;
+        padding: 1rem;
+        padding-left: 4rem;
+      }
+      nav.main a:link {
+        color: #000000;
+        font-family: sans-serif;
+      }
+      nav.main a:visited {
+        color: #000000;
+        font-family: sans-serif;
+      }
+      /* End Nav Bar style */
+      
+      section.right img {
+        width: 200px;
+      }
+      
+      section.right {
+        display: block;
+        float: right;
+        position: relative;
+        width: 40%;
+        padding-right: 4rem;
+        padding-left: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+      }
+      
+      section.right a:link {
+        color: #00b8e1;
+        font-family: sans-serif;
+      }
+      
+      section.right a:visited {
+        color: #00b8e1;
+        font-family: sans-serif;
+      }
+      
+      
+      main {
+        display: block;
+        float: left;
+        position: relative;
+        width: 60%;
+        padding-left: 4rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+      }
+    
+      /* Begin Footer-Specific style */
+      footer {
+        background-color: #303030;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 3rem;
+        clear: both;
+        /*float: bottom;*/
+      }
+      footer img {
+        width: 200px;
+      }
+      footer a:link {
+        color: #FFFFFF;
+      }
+      footer a:visited {
+        color: #FFFFFF;
+      }
+      /* End Footer-Specific style */
+      
+      
+      .month {
+        padding: 70px 25px;
+        width: 100%;
+        background-image: url("https://github.com/UWFront-End-Cert/starters/blob/master/lesson04-mock4-footer-image.jpg?raw=true");
+        background-size: contain;
+        text-align: center;
+      }
+
+      .month ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      .month ul li {
+        color: white;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+      }
+
+      .month .prev {
+        float: left;
+        padding-top: 10px;
+      }
+
+      .month .next {
+        float: right;
+        padding-top: 10px;
+      }
+
+      .weekdays {
+        margin: 0;
+        padding: 10px 0;
+        background-color: #ddd;
+      }
+
+      .weekdays li {
+        display: inline-block;
+        width: 13.6%;
+        color: #666;
+        text-align: center;
+      }
+
+      .days {
+        padding: 10px 0;
+        background: #eee;
+        margin: 0;
+      }
+
+      .days li {
+        list-style-type: none;
+        display: inline-block;
+        width: 13.6%;
+        text-align: center;
+        margin-bottom: 5px;
+        font-size:12px;
+        color: #777;
+      }
+
+      .days li .active {
+        padding: 5px;
+        background: #00b8e1;
+        color: white !important
+      }
+
+    </style>
+    
+    <script>
+      var today = new Date();
+      var yyyy = today.getFullYear();
+    </script>
+
+  </head>
+  
+  <body>
+    
+    <header>
+      <h1>
+        Kitties To Go!
+        
+      </h1>
+      <h2>
+        Seattle's premiere drive-thru <br>cat rentals
+      </h2>
+    </header>
+    <nav class="main">
+       <a href="lesson-4-mockup.html">About</a> / <a href="https://www.google.com">Rates</a> / <a href="https://www.google.com">Liability Release</a> / <a href="https://www.google.com">Kitty Profiles</a> / <a href="lesson-4-mockup-book-a-cat.html">Book a Cat</a>
+    </nav>
+    
+    <div>
+      <section class="right">
+        <h4>How to care for a Cat</h4>
+        <ul>
+          <li>
+            <p>What they Eat? Well cat's love to eat bananas.  If you're not paying attention, they'll try ot eat your face.  Just pay attention to the cat.  They'll take off and drive your car to the local butcher and try to buy ham with your credit card.  Feed the cat so they don't try to steal your car.</p>
+            <br><a href="https://www.google.com">Find out more >></a>
+          </li>
+          <li>
+            <p>How to talk to a Cat?  Cat's love polite conversation.  They know when you're talking bad about them behind their back, so don't say anything rude.  They don't really know their own name, so anytime you're rude about anything, they'll think you're talking smack about them.  Don't do that or they'll eat your face.</p>
+            <br><a href="https://www.google.com">Find out more >></a>
+          </li>
+          <li>
+            <p>Teach a Cat to Drive?  Good idea.  They might steal your car, so best teach them how to drive to ensure they don't crash, (see our cat rental liability).  Cat's can't learn how to drive stick, however, so you'll need an automatic.  Cat's don't like EVs.  We're not sure why.  We assume it's because they don't 'purr' like a turbo-charged V6.</p>
+            <br><a href="https://www.google.com">Find out more >></a>
+          </li>
+          <li>
+            <p>Cats do Taxes!  That's right, if you teach your cat to drive and learn how to speak 'cat', then you can convince them to do your taxes.  Cat's love numbers and are very particular.  (See our liability waiver; we are not liable for any damages caused by incorrect Cat-Tax-Returns.</p>
+            <br><a href="https://www.google.com">Find out more >></a>
+          </li>
+        </ul>
+      </section>
+    
+      <main>
+        <section class="calendar">
+          <h3 class="calendar">
+            Cat Calendar
+          </h3>
+          
+          <div class="month">
+            <ul>
+             <li class="prev">&#10094;</li>
+             <li class="next">&#10095;</li>
+             <li>
+               <script>
+                 document.write(today.toLocaleString('default', { month: 'long' }));
+               </script>
+               <br>
+               <span style="font-size:18px"><script>
+                 document.write(yyyy);
+               </script></span>
+             </li>
+            </ul>
+          </div>
+
+          <ul class="weekdays">
+            <li>Fr</li>
+            <li>Mo</li>
+            <li>Sa</li>
+            <li>Su</li>
+            <li>Th</li>
+            <li>Tu</li>
+            <li>We</li>
+          </ul>
+
+          <ul class="days">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li><span class="active">4</span></li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li><span class="active">8</span></li>
+            <li><span class="active">9</span></li>
+            <li><span class="active">10</span></li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li><span class="active">15</span></li>
+            <li>16</li>
+            <li>17</li>
+            <li>18</li>
+            <li>19</li>
+            <li>20</li>
+            <li><span class="active">21</span></li>
+            <li>22</li>
+            <li>23</li>
+            <li><span class="active">24</span></li>
+            <li><span class="active">25</span></li>
+            <li>26</li>
+            <li>27</li>
+            <li><span class="active">28</span></li>
+            <li>29</li>
+            <li>30</li>
+            <li>31</li>
+          </ul>
+          
+          
+          
+          <h4>Reservation Liability</h4>
+          <p>
+            Kitties to Go!, LLC, is not liable for any damage caused by our cats to your home, person, other pets, or any heretofore property.  Reservation requires the reservee-ee to care for the cat and is liable for any harm to the cat, including its mental well-being.  The cat's well-being will be assessed by our cat-whisperers that can speak cat and know if they enjoyed you or not.
+          </p>
+          <p>
+            Kitties to Go!, LLC, is not liable for our Cat's improperly filing your taxes.
+          </p>
+        </section>
+      </main>
+    </div>
+    
+    <footer>
+        <img src="https://raw.githubusercontent.com/UWFront-End-Cert/starters/master/lesson04-mock5-cat-logo.png" alt="company logo">
+        <p>
+          Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>esseque invenienihil imaximu scideru ptistiusam consequunt
+        </p>
+        <nav>
+          <a href="https://www.google.com">Footer link 1</a> / <a href="https://www.google.com">Footer link 2</a> / <a href="https://www.google.com">Footer link 3</a> / <a href="https://www.google.com">Footer link 4</a>
+        </nav>
+        <p>
+          © 2018 Kitties To Go!, LLC | Seattle, WA
+        </p>
+    </footer>
+
+  </body>
+    
+
