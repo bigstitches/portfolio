@@ -75,5 +75,5 @@
     list-style: none;
     background-color: #f6d1c5;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
   }
