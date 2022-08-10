@@ -4,52 +4,53 @@
   <head>
     <meta charset="utf-8">
     <title>
-      Lesson 1 assignment.  Two web pages that reference eachother in navigation.  This is the main page.
+      Lesson 5 assignment. This is the main page, updated with flexbox, font awsome and
     </title>
+    <script src="https://kit.fontawesome.com/19c324e165.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+    </style>
   </head>
   <body class="index-body">
     <header>
       <h1>
-        Main Page
+        Eileen Beck
       </h1>
-      <h2>
-        Art first.  Code second.
-      </h2>
-      <p class="important">
+      <p>
         This landing page will link you to my projects, as well as showcase my photography.
       </p>
     </header>
     <nav>
-      <h3>
+      <h3 id="no-show" style="display: none;">
         Menu
       </h3>
-      <menu>
+      <menu class="flexbox-menu">
         <li class="project-link"><a href="project.html">Projects</a></li>
-        <li><a href="images/neon_pinkcactus.jpg">Image Source</a></li>
+        <li class="project-link"><a href="images/neon_pinkcactus.jpg">Image Source</a></li>
+        <li class="project-link"><a href="project.html">Projects</a></li>
+        <li class="project-link"><a href="project.html">Projects</a></li>
+        <li class="project-link"><a href="project.html">Projects</a></li>
       </menu>
     </nav>
-    <section>
-      <h2>
-          A trip to the dessert
-      </h2>
+
       <div class="three-columned-section">
-        <p>
-          A cactus doesn't bloom until it reaches <em class="emphasize-me important">full</em> maturity.<br>
-          <img src="images/neon_pinkcactus.jpg" alt="An Arizona cactus with bright neon flowers">
-        </p>
-        <p>
-          Petal colors are dicated by the light they <em>can't</em> absorb.<br>
-          <img src="images/orange_cactus.jpg" alt="An Arizon cactus with about a dozen orange flowers blooming">
-        </p>
-        <p>
-          Pacific Nortwest bridge between Washington and Astoria, OR.<br>
-          <img src="images/astoria_bridge.jpg" alt="The Astoria bridge facing Washington.">
-        </p>
+        <p class="image-descrip">Photography <i class="fa-solid fa-camera"></i></p>
+        <p class="image-descrip">Oil Paintings <i class="fa-solid fa-palette"></i></p>
+        <p class="image-descrip">Other Art <i class="fa-solid fa-earth-americas"></i></p>
       </div>
-    </section>
-    <footer>
-      Assignment 3.
+      <div class="three-columned-section">
+        <img src="images/neon_pinkcactus.jpg" alt="An Arizona cactus with bright neon flowers">
+        <img src="images/orange_cactus.jpg" alt="An Arizon cactus with about a dozen orange flowers blooming">
+        <img src="images/astoria_bridge.jpg" alt="The Astoria bridge facing Washington.">
+      </div>
+
+    <footer class="flexbox-footer">
+        <a href="https://www.row2k.com/news/5-26-2004/dii-iii-crca-all-america-awards/13165/" class="project-link">ALL AMERICAN</a>
+        <a href="https://en.wikipedia.org/wiki/USCGC_Healy_(WAGB-20)" class="project-link">HEALY</a>
+        <a href="https://www.jhu.edu/" class="project-link">JHU</a>
+        <a href="https://uscga.edu/" class="project-link">USCGA</a>
+        <a href="https://www.ravelry.com/people/BigStitchesBeck" class="project-link">BIG STITCHES</a>
     </footer>
   </body>
 </html>
