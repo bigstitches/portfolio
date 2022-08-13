@@ -3,47 +3,82 @@
     margin-top:0px;
     font-family: 'Permanent Marker', cursive;
   }
+  
   .index-body {
     background-color: white;
   }
-  .project-body {
-    background-color: blue;
+  
+  div.project-flex {
+    display:flex;
+    justify-content: center;
   }
+  
   .emphasize-me {
      color: red;
   }
+  
   .important {
     font-weight:bold;
   }
+  
   a:link{
     color: black;
     font-family: 'Permanent Marker', cursive;
     text-decoration: none;
+    transition: all 5s ease 1s;
   }
+  
   a:visited{
     color: black;
   }
+  
   .important:hover {
     background-color:pink;
   }
+  
   .project-link:visited {
     color: black;
   }
+  
   a[href="index.html"] {
     padding: 1rem;
   }
+  
   .index-link:hover {
     text-shadow: 0 0.015em #101010,0 -0.015em #101010,0.01em 0 #101010,-0.01em 0 #101010;
   }
+  
   a[href="project.html"] {
     padding: 1rem;
   }
+  
   .project-link:hover {
     text-shadow: 0 0.015em #101010,0 -0.015em #101010,0.01em 0 #101010,-0.01em 0 #101010;
   }
+  
+  ul.simple {
+    padding-left: 0;
+  }
+  
   li {
     padding: 1rem;
+    list-style: none;
   }
+  
+  ul.simple > li {
+    list-style: square;
+    list-style-position: inside;
+    /*border: dotted;*/
+    margin-left: 0;
+    padding-left: 0;
+    transition: all 2s ease 1s;
+  }
+  
+  
+  ul.simple > li:nth-child(even) {
+    background-color: lightpink;
+  }
+  
   h1 {
     color: black;
     font-family: 'Permanent Marker', cursive;
@@ -51,29 +86,75 @@
     margin-top: -1rem;
     margin-bottom: -1rem;
   }
+  
+  #project-h1 {
+    text-align:center;
+  }
+  
+  h2.project-h2 {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    /*border: dotted;*/
+  }
+  
   img {
     border-style: solid;
     border-color: black;
     width: 170px;
   }
+  
   .image-descrip {
     width: 170px;
     text-align: center;
   }
+  
   .three-columned-section {
     display: flex;
     justify-content: space-around;
   }
+  
   .flexbox-menu {
     list-style: none;
     background-color: #f6d1c5;
     display: flex;
+    flex-direction: row;
     justify-content: center;
   }
-  .flexbox-footer {
+  
+  footer {
     margin-top: 1rem;
-    list-style: none;
     background-color: #f6d1c5;
     display: flex;
     justify-content: space-around;
+  }
+  
+  img.project-img {
+    width:8rem;
+    height:8rem;
+    background-size:cover;
+    border-radius:50%;
+    transition: transform 5s ease 1s;
+    
+  }
+  
+ 
+  img.project-img:hover {
+    transform: scale(1.25);
+  }
+
+  aside.project-aside-left {
+    margin: 0.5rem;
+    /*border: dotted;*/
+    
+  }
+  aside.project-aside-right {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    /*border: dotted;*/
+  }
+
+  .project-footer {
+    background-image: url("../images/footer.jpg");
+    height: 8rem;
   }

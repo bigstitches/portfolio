@@ -7,45 +7,50 @@
       Lesson 1 assignment.  Two web pages that reference eachother in navigation.  This is the project page.
     </title>
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <script src="https://kit.fontawesome.com/19c324e165.js" crossorigin="anonymous"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+    </style>
   </head>
   <body class="project-body">
     <header>
-      <h1><a id="top_no_projects"></a>
+      <h1 id="project-h1">
         My Projects
       </h1>
-      <p>
-        This is a list of all my projects.
-      </p>
     </header>
-    <nav>
-      <h3>
-        Menu
-      </h3>
-      <menu>
-        <li class="index-link important"><a href="index.html">Main Page</a></li>
-      </menu>
-    </nav>
-    <section>
-      <h2>
-        List of Projects
+   <div class="project-flex">
+    <aside class="project-aside-left">
+      <h2 class="project-h2">
+           List of Projects
       </h2>
-      <ol>
-        <li>
-          <a href="https://github.com/bigstitches/semantic-elements/blob/main/index.html">My first Project</a>
-        </li>
-        <li>
-          <a href="https://github.com/bigstitches/portfolio">Assignment #2</a>
-        </li>
-        <li>
-          <a href="lesson-4-mockup.html">Assignment #4</a>
-        </li>
-        <li>
-          <a href="html-css-basics/flex-practice.html">HTML & CSS Practice Pages</a>
-        </li>
-      </ol>
-    </section>
-    <footer>
-      Pretty slim list in assignment #2.
+      <div>
+        <ul class="simple">
+          <li class="project-link">
+            <a href="https://github.com/bigstitches/semantic-elements/blob/main/index.html">My first Project</a>
+          </li>
+          <li class="project-link">
+            <a href="https://github.com/bigstitches/portfolio">Assignment #2</a>
+          </li>
+          <li class="project-link">
+            <a href="lesson-4-mockup.html">Assignment #4</a>
+          </li>
+          <li class="project-link">
+            <a href="html-css-basics/flex-practice.html">Assignment #5</a>
+          </li>
+          <li class="project-link">
+            <a href="html-css-basics/flex-practice.html">Assignment #6</a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <aside class="project-aside-right">
+      <a href="https://www.jhu.edu/" class="project-link"><img src="images/tower.jpg" alt="An Arizona cactus with bright neon flowers" class="project-img"></a>
+      <a href="https://uscga.edu/" class="project-link"><img src="images/jellyfish.jpg" alt="An Arizona cactus with bright neon flowers" class="project-img"></a>
+      <a href="https://www.ravelry.com" class="project-link"><img src="images/anemone.jpg" alt="An Arizona cactus with bright neon flowers" class="project-img"></a>
+    </aside>
+    </div>
+    <footer class="project-footer">
+      <a href="index.html">Back to Main Page</a>
     </footer>
   </body>
 </html>
