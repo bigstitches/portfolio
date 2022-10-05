@@ -24,9 +24,10 @@
 
       
       h2, h2 a {
-        font-weight: bold;
-        font-size:; 24px;
+        font: bold;
+        font-size: 24px;
         color: #ecb722;
+        margin: 8px;
       }
 
       .container {
@@ -34,11 +35,8 @@
         grid:
               'heading heading heading heading heading' 8em
               'head-ln head-ln head-ln head-ln head-ln' 4px
-              'aleft   aleft   aright  aright  aright' 6em
-              'aleft   aleft   aright  aright  aright' 6em
-              'about   about   about   about   about' 25em
+              'main    main    main    main    main' 35em
               'main-ln main-ln main-ln main-ln main-ln' 4px
-              'cleft   cright  cright  cright  cright' 15em
               'footer  footer  footer  footer  footer' 10em /
               1fr      1.8fr     .3fr     1fr     1fr;
         /*border: dashed;*/
@@ -55,11 +53,6 @@
       
       .line-1{
         grid-area: head-ln;
-        height: 4px;
-        background: #1b447f;
-      }
-      .line-2{
-        grid-area: main-ln;
         height: 4px;
         background: #1b447f;
       }
@@ -152,7 +145,7 @@
       }
       
       main {
-        grid-area: about;
+        grid-area: main;
         display: flex;
         margin: 4px;
         flex-direction: column;
@@ -160,21 +153,32 @@
         background-image: linear-gradient(#03a3df, #1b447f);
       }
       
-      main p {
-        margin: 10px;
-      }
-      
-      aside.programs {
-        grid-area: cleft;
-      }
-      aside.instructors {
-        grid-area: cright;
-
-      }
-      div.instructor-bubbles {
+      .instructor-bubbles {
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
+        padding: 1em;
       }
+      
+      .instructor-bubbles div {
+        height: 31em;
+        width: 15em;
+        border: dashed;
+        background-color: white;
+        overflow: hidden;
+        padding: .2em;
+        display: flex;
+        flex-direction: column;
+        /*position: relative;*/
+        overflow: hidden;
+      }
+      
+      /* last p child of .instructgor-bubbles div */
+      /*.instructor-bubbles div p:last-child{
+        position: absolute;
+        bottom: 0;
+        overflow: scroll;
+      }*/
       
       footer {
         
@@ -230,6 +234,24 @@
         /*border: dashed;*/
         overflow: hidden;
       }
+      
+      blockquote {
+        font-size: 1.2em;
+        color: #03a3df;
+        text-align: center;
+        text-justify: inter-word;
+        margin: 0;
+      }
+      .cap-bold {
+        font-size: .5em;
+        font-weight: bold;
+        color: #03a3df;
+        text-transform: uppercase;
+      }
+      
+      main p{
+        color: #03a3df;
+      }
 
     </style>
   </head>
@@ -266,92 +288,58 @@
       </nav>
       
     </header>
-    
     <div class="line-1"></div>
-    <aside class="this-address">
-        <!-- google map embedded-->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d173119.70578785214!2d-122.46449203426566!3d47.314428335559704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54905587889900df%3A0x11ab1e2babb906d!2sTacoma%20Soccer%20Center!5e0!3m2!1sen!2sus!4v1664768797940!5m2!1sen!2sus" width="252" height="189" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-        <address>
-          <p>Straight to the Point Archery</p>
-          <p>528 Nock Point Ln</p>
-          <p>Tacoma, WA 98412</p>
-        </address>
-        
-    </aside>
-        <!--<hr class="mini-separation-line">-->
-        
-    <div class="philosophy-paragraph">
-           <p>Next Step Archery admits students of any race, gender presentation, sexuality, religion, national origin or ethnic origin to all rights, privileges, programs and activities available to students at the school. We do not discriminate in administration of our educational policies, admission policies and other school administered programs. All students are welcome and valuable members of our community.
-           </p>
-    </div>
-        
-  
-      <!--<hr class="mini-separation-line">-->
-    
-    <main>
-          <p>
-            <b>S</b>traight to the Point Archery is a non profit archery education center founded in 2005 by Giap Nguyen.  Our state of the art educational and training facility incorporates detailed technical video analysis combined with generations of archery experience from certified coaches and instructors.
-          </p>
-          <p>
-            <b>S</b>traight to the Point Archery is an indoor training facility with  28 shooting (14 -  10 yard lanes and 14 – 20 yard lanes) and 2 private coaching rooms. We also have access to 26  additional  20 yard lanes  and an outdoor shooting field.  We offer several types of lessons to accommodate everyone from the first time archer to the professional archer. Once set up with proper fitting equipment, each archer will be given the basic safety instruction to start and will be introduced to various shooting techniques.
-          </p>
-          <p>
-            <b>F</b>rom Beginner to Elite, archers of all ages and ability learn about this exciting Olympic and international sport. Sign up for a group lesson, private class, schedule a birthday or corporate party or compete at one of our many tournaments.  Straight to the Point Archery also offers homeschooling programs, kids club events, YMCA classes, Boy and Girl Scouts achievement programs and several other youth group activities. We are dedicated to teaching valuable life skills to the youth in our community through the wonderful discipline of archery.
-          </p>
-          <p>
-            <b>S</b>traight to the Point Archery has instructors that are qualified level 1 and level 2 instructors and have met the safety requirements of the USA Archery (USAA). We teach in a positive learning environment.  Our instructors also have extensive knowledge of the most advanced archery equipment and all forms of archery from the traditional long bow to the modern compound.  Straight to the Point Archery also has specific instructors for recreational archery, competitive archery and bow hunting.
-          </p>
-          <!--
-          <p>
-            Straight to the Point Archery has an excellent network of contacts with the USA Archery (USAA), Washington State Archery Association (WSAA), Washington State Bow Hunters (WSB), National Field Archery Association (NFAA) and many more national and state archery associations. These partnerships allow you to feel confident in our facility and staff.
-          </p>
-          <p>
-            Straight to the Point Archery’s staff has decades of experience in the archery industry. We are committed to educating you with any questions that you may have.
-          </p>
-          -->
-    </main>
-      <!--<hr class="mini-separation-line">-->
-    <div class="line-2"></div>
-    <aside class="programs">
-        <h2><a href="archery-classes.html">Classes</a></h2>
-        <div class="class-bubbles-div">
-          <div>
-            <span class="dot 1b447f"></span>
-            <p>A101</p>
-          </div>
-          <div>
-            <span class="dot ecb722"></span>
-            <p>A102</p>
-          </div>
-          <div>
-            <span class="dot 444444"></span>
-            <p>A103</p>
-          </div>
-        </div>
-    </aside>
-      
-    <aside class="instructors">
-        <h2><a href="archery-classes.html">Instructors</a></h2>
+    <main class="instructors">
         <div class="instructor-bubbles">
-          <div>
-            <a href="#a101"><img src="https://github.com/UWFront-End-Cert/html100/blob/master/lesson07-styleguide/styleguide%20design%20elements/instructor-bio-image1.png?raw=true" alt="HTML tutorial" style="width:5rem;">Derek Jenkins</a>
+          <div class="jenkins">
+            <a href="#a101"><img src="https://github.com/UWFront-End-Cert/html100/blob/master/lesson07-styleguide/styleguide%20design%20elements/instructor-bio-image1.png?raw=true" alt="HTML tutorial" style="width:5rem;"></a>
+            <h2>Derek Jenkins</h2>
+            <hr>
+            <p class="cap-bold">CERTIFICATION:</p>
+            <p>Level 3 Coach</p>
+            <p class="cap-bold">COACHING BOW STYLES:</p>
+            <p>Recurve</p>
+            <blockquote>"There're bows and arrows. But the archer makes the bullseyes."</blockquote>
+            <p>Derek is a Washington native and an experienced outdoorsman with many years hunting, fishing, skiing, canoeing, archery, shooting and minimalistic camping.</p>
           </div>
-          <div>
-            <a href="#a102"><img src="https://github.com/UWFront-End-Cert/html100/blob/master/lesson07-styleguide/styleguide%20design%20elements/instructor-bio-image2.png?raw=true" alt="HTML tutorial" style="width:5rem;">Amy Smith</a>
+          <div class="smith">
+            <a href="#a102"><img src="https://github.com/UWFront-End-Cert/html100/blob/master/lesson07-styleguide/styleguide%20design%20elements/instructor-bio-image2.png?raw=true" alt="HTML tutorial" style="width:5rem;"></a>
+            <h2>Amy Smith</h2>
+            <hr>
+            <p class="cap-bold">CERTIFICATION:</p>
+            <p>Level 11 Coach</p>
+            <p class="cap-bold">COACHING BOW STYLES:</p>
+            <p>Kapow</p>
+            <blockquote>"Take your shot. I'm all a 'quiver'."</blockquote>
+            <p>Amy truly has a passion for archery. She comes from a long line of hunters, fisherman, and trappers of Canada.</p>
           </div>
-          <div>
-            <a href="#a103"><img src="https://github.com/UWFront-End-Cert/html100/blob/master/lesson07-styleguide/styleguide%20design%20elements/instructor-bio-image3.png?raw=true" alt="HTML tutorial" style="width:5rem;">Nathan Lee</a>
+          <div class="Lee">
+            <a href="#a103"><img src="https://github.com/UWFront-End-Cert/html100/blob/master/lesson07-styleguide/styleguide%20design%20elements/instructor-bio-image3.png?raw=true" alt="HTML tutorial" style="width:5rem;"></a>
+            <h2>Nathan Lee</h2>
+            <hr>
+            <p class="cap-bold">CERTIFICATION:</p>
+            <p>Level 3 Coach</p>
+            <p class="cap-bold">COACHING BOW STYLES:</p>
+            <p>Intense</p>
+            <blockquote>"When I shoot, I shoot to 'thrill'."</blockquote>
+            <p>Nathan is an USA Archery Certified Level 3 NTS – Coach and has been teaching archery since 2009. He has been interested in archery since he nocked his first arrow.</p>
           </div>
-          <div>
-            <a href="#private-lessons"><img src="https://github.com/UWFront-End-Cert/html100/blob/master/lesson07-styleguide/styleguide%20design%20elements/instructor-bio-image4.png?raw=true" alt="HTML tutorial" style="width:5rem;">Giap Nguyen</a>
+          <div class="Nguyen">
+            <a href="#private-lessons"><img src="https://github.com/UWFront-End-Cert/html100/blob/master/lesson07-styleguide/styleguide%20design%20elements/instructor-bio-image4.png?raw=true" alt="HTML tutorial" style="width:5rem;"></a>
+            <h2>Giap Nguyen</h2>
+            <hr>
+            <p class="cap-bold">CERTIFICATION:</p>
+            <p>Level Olympian Coach</p>
+            <p class="cap-bold">COACHING BOW STYLES:</p>
+            <p>Mostly with my arms</p>
+            <blockquote>"I'm an olympic level athlete. Not a lot can top that."</blockquote>
+            <p>Giap Nguyen started Straight to the Point Archery in 2005. He's an avid and accomplished archer himself, having competed with the United States Archery Team in the 2000 Summer Olympics.</p>
           </div>
         </div>
-    </aside>
+    </main>
       <!--<hr class="separation-line">-->
     
-    
-    
+
     
     <footer>
       <img src="https://github.com/UWFront-End-Cert/html100/blob/master/lesson07-styleguide/styleguide%20design%20elements/archeryAcademy-logo-white.png?raw=true" alt="Archery Academy Logo" class="footer-logo">
