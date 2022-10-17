@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <!--Comments go between these characters-->
+  <head>
+    <meta charset="utf-8">
+    <title>
+      contact me form
+    </title>
+    <script src="https://kit.fontawesome.com/19c324e165.js" crossorigin="anonymous"></script>
+    <style>
+      .form-container {
+        display: flex;
+        justify-content: center;
+      }
+      
+      form {
+        position: relative;
+        width: 50%;
+        text-align: center;
+        font-size: 1em;
+        padding: 1em;
+        border: solid;
+        border-color: teal;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: lightblue;
+      }
+      
+      label {
+        margin: 1px;
+      }
+      input {
+        margin: 1px;
+      }
+      
+      .div-checkbox {
+        border: solid;
+        width: 50%;
+        margin: 1em;
+        background-color: pink;
+      }
+      
+      p {
+        margin: 1px;
+      }
+      
+      i {
+        visibility: hidden;
+      }
+      
+      
+      input[value="Yarn"]:checked + .fa-mitten {
+        font-weight: bold;
+        visibility: visible;
+      }
+      input[value="Art"]:checked + .fa-palette {
+        font-weight: bold;
+        visibility: visible;
+      }
+      input[value="UI"]:checked + .fa-users-rectangle {
+        font-weight: bold;
+        visibility: visible;
+      }
+      
+      input[type=text]:focus-within, input[type=email]:focus-within {
+        background-color: lightblue;
+      }
+      
+      input[type="submit"]{
+        margin-top: 1em;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+    <form>
+      <div>
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"><br>
+      </div>
+      <div>
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"><br>
+      </div>
+      <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br>
+      </div>
+      
+      
+      
+      <div class="div-checkbox">
+        <p>Choose an Interest:</p>
+        <label for="checkbox-yarn">Yarn:</label>
+        <input type="checkbox" id="checkbox-yarn" name="interest" value="Yarn">
+        <i class="fa-solid fa-mitten"></i>
+        
+        <label for="checkbox-art">Art:</label>
+        <input type="checkbox" id="checkbox-art" name="interest" value="Art">
+        <i class="fa-solid fa-palette"></i>
+        
+        <label for="checkbox-UI">UI:</label>
+        <input type="checkbox" id="checkbox-UI" name="interest" value="UI">
+        <i class="fa-solid fa-users-rectangle"></i>
+      </div>
+      
+      <input type="submit" value="Send">
+    </form>
+    </div>
+  </body>
+</html>
